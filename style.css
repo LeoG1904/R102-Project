@@ -3,15 +3,32 @@ body{
   padding: 0;
   top: 0;
   bottom: 0;
+  z-index: 2 !important;
 }
 header{
-  display: inline-flex;
-}
-ul{
+  width: 100%;
+  margin: 0;
   display: flex;
-  float: right;
-  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px black;
 }
-li{
-  float: right;
+nav{
+  padding-right: 1.5em;
+}
+nav > a{
+  padding-left: 1em;
+  text-decoration: none;
+  color: inherit;
+}
+header > img{
+  width: 3em;
+  height: 3em;
+  padding: 0.5em;
+  padding-left: 1.5em;
+}
+h1#title{
+  text-align: center;
+  padding: 3em;
+  padding-top: 15%;
 }
