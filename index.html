@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <link href="style.css" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Cours 1A info</title>
-    <meta name="description" content="Cours de mathématiques gratuit">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="icon" type="image/png" href="img/logo_IUT.png">
+    <title>Atlantis</title>
   </head>
   <body>
-    <img src="img/background.jpg" alt="" id="bg_img">
+
     <header>
-      <img src="img/logo_IUT.png" alt="">
-      <nav id="header">
-        <a href="#">Pages</a>
-        <a href="#">Contact</a>
+      <nav>
+        <ul>
+          <li>
+            <div class="button">
+              <span></span>
+            </div>
+          </li>
+          <li><a href="#">Contact</a>
+            <ul class="submenu nav">
+              <li><p class="id_menu start">Menu:</p><br><br></li>
+              <li><a href="#" class="id_menu">Téléchargement</a><br><br></li>
+              <li><a href="#" class="id_menu end">Crédits</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="selected">Home</a>
+          </li>
+          <li class="atl"><a>Atlantis</a></li>
+        </ul>
       </nav>
     </header>
+
+    <div class="title">
+      <h1>Atlantis RP</h1>
+      <h2>Arma 3</h2>
+    </div>
+
     
 
-
-    <h1 id="title">
-      Cours première année I.U.T Aix-en-Provence
-    </h1>
-      
     <footer>
-      <h1>
-        Test
-      </h1>
+      <div>
+        <p>© Atlantis RP. All rights reserved</p>
+        <p>|</p>
+        <p>Developer: Killian Ferrier</p>
+      </div>
     </footer>
 
+    <script type="text/javascript" src="javascript/app.js"></script>
   </body>
 </html>
