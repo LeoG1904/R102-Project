@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Killian Ferrier</title>
+    <link rel="stylesheet" href="../styles/killian.css">
   </head>
   <body>
-    <ul>
-      <li></li>
-    </ul>
+    <header>
+      <a href="">Menu</a>
+      <a href="">Contact</a>
+    </header>
+    <div class="menu">
+      <nav>Lorem ipsum dolor sit amet.</nav>
+      <nav>Lorem ipsum dolor sit amet.</nav>
+      <nav>Lorem ipsum dolor sit amet.</nav>
+    </div>
+    <div class="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <script>
+      let menu = document.querySelector('.menu')
+      let menutoggle = document.querySelector('.toggle');
+      menutoggle.onclick = function(){
+        menutoggle.classList.toggle('active')
+        menu.classList.toggle('active')
+      }
+    </script>
   </body>
 </html>
