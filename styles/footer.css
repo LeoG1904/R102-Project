@@ -1,11 +1,11 @@
 footer{
-  background-color: rgba(46, 49, 65, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 3em 5em 3em 5em;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.6);
 }
 footer div{
-  border-top: rgba(255, 255, 255, 0.4) solid 1px;
+  border-top: rgba(0, 0, 0, 0.4) solid 1px;
 }
 footer p {
   display: inline-flex;
