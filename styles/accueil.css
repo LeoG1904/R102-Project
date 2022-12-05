@@ -1,0 +1,151 @@
+body {
+  background-color: #1a5276;
+  color: #fff;
+}
+
+.allInformations {
+  display: flex;
+  justify-content: space-between;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.allInformations div {
+  margin: 25px;
+}
+.langues{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+.lienProjet {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(0%, -50%);
+  padding: 20px;
+  background-color: #e74c3c;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.75);
+}
+
+.lienProjet:hover {
+  -webkit-box-shadow: 0px 0px 45px 15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 45px 15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 45px 15px rgba(0, 0, 0, 0.75);
+}
+
+.lienProjet a {
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  transition: all 0.2 ease-in-out;
+  transform: scale(1.2);
+  user-select: none;
+}
+
+.titre h1 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+}
+
+
+.nomsPrenoms {
+  display: flex;
+  cursor: pointer;
+}
+
+.prenom {
+  margin: 5px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nom {
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.nom::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0%;
+}
+
+.nom:hover::after {
+  width: 100%;
+  left: 0%;
+}
+
+.projet {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.projetDesciprtion {
+  margin-top: 250px;
+  margin-left: 50px;
+  padding-left: 10px;
+  border-left: 2px solid #3498DB ;
+  max-width: 350px;
+}
+
+.projetDesciprtion p {
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.enSavoirPlus {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.enSavoirPlus::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 0%;
+  position: absolute;
+  background: #3498DB;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
+}
+
+.enSavoirPlus:hover::after {
+  width: 0%;
+  left: 0%;
+}
+
+.imageRobotino {
+  position: absolute;
+  right: 1%;
+  width: 50%;
+}
+
+.descriptionAccueilProjet {
+  line-height: 25px;
+  font-size: 1.2em;
+}
