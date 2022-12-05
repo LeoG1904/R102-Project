@@ -3,15 +3,8 @@ header{
   display: block;
   top: 0;
   width: 100%;
-  transition: all 0.5s;
-}
-header.active{
-  position: fixed;
-  display: block;
-  top: 0;
-  width: 100%;
-  background-color: rgba(46, 49, 65, 0.7);
-  transition: all 0.5s;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 .selected{
   text-decoration: underline;
@@ -36,7 +29,7 @@ nav > ul > li{
 }
 nav > ul > li > a{
   padding: 20px 30px;
-  color: #FFF;
+  color: black;
   font-size: 23px;
 }
 nav li{
@@ -48,7 +41,7 @@ nav a {
 }
 nav > ul > li > p{
   padding: 20px 30px;
-  color: #FFF;
+  color: black;
   font-size: 23px;
 }
 nav p {
@@ -101,7 +94,7 @@ nav p {
 }
 .button span{
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: black;
   width: 100%;
   position: absolute;
   top: 20px;
@@ -110,7 +103,7 @@ nav p {
 .button span:before{
   content: '';
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: black;
   width: 100%;
   position: absolute;
   top: -10px;
@@ -119,7 +112,7 @@ nav p {
 .button span:after{
   content: '';
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: black;
   width: 100%;
   position: absolute;
   top: 10px;

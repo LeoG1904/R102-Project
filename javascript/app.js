@@ -6,6 +6,8 @@ btn.onclick = function(){
   nav.classList.toggle('nav_open');
 }
 
+
+/*
 window.onscroll = function(){
   var top = window.scrollY;
   if (top >= 30){
@@ -14,3 +16,4 @@ window.onscroll = function(){
     header.classList.remove('active');
   }
 }
+*/
