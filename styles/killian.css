@@ -10,23 +10,23 @@
 }
 
 
-#part1{
+.part1{
     left: 50%;
     transform: translateX(50%);
     padding-top: 4em;
 }
-#part1 > content > p{
+.part1 > content  p{
     text-align: justify;
     padding: 1em;
 }
-#part1 > content{
+.part1 > content{
     display: flex;
     width: 50%;
     justify-content: center;
     transform: translateX(50%);
     padding: 3em;
 }
-#part1 > content > img{
+.part1 > content img{
     width: 13em;
     height: 13em;
 }
