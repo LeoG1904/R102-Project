@@ -86,7 +86,6 @@ header>div>a{
 }
 
 /* menu ouvrant */
-
 .menu{
     position: fixed;
     transform: translateX(-300px);
@@ -98,6 +97,8 @@ header>div>a{
     background: rgba(255, 255, 255,0.9);
     transition: 0.5s;
     z-index: 1!important;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .menu.active{
     transform: translateX(0px);
