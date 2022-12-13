@@ -126,7 +126,7 @@ a{
 
 @media all and (max-width: 450px) {  
   *{
-    font-size: 25px;
+    font-size: 20px;
   }
   a, p{
     font-size: 15px!important;

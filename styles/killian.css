@@ -40,7 +40,5 @@ ul > li{
 
 
 @media all and (max-width: 450px) {
-    *{
-        color: blue!important;
-    }
+    
 }
