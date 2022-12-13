@@ -83,7 +83,7 @@ a{
 
 .projetDesciprtion { /*mise en page du petit paragraphe au dessus du "accès ..." */
   padding-left: 10px;
-  border-left: 2px solid #FDE200 ;
+  border-left: 2px solid #FDE200;
   max-width: 350px;
   margin-left: 15%;
 }
