@@ -13,11 +13,14 @@
 .contenue > content{
     left: 50%;
     transform: translateX(50%);
-    padding-top: 4em;
+    margin-top: 4em;
 }
-.contenue > content > content  p{
+.contenue > content > content  p, ul{
     text-align: justify;
     padding: 1em;
+}
+ul > li{
+    text-align: left !important;
 }
 .contenue > content > content{
     display: flex;
