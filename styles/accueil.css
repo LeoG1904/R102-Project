@@ -122,3 +122,20 @@ a{
   line-height: 30px;
   font-size: 1.2em;
 }
+
+
+@media all and (max-width: 450px) {  
+  *{
+    font-size: 25px;
+  }
+  a, p{
+    font-size: 12px!important;
+  }
+  .projetDesciprtion{
+    margin-left: 10%;
+  }
+  .ml9 {
+    font-weight: 100;
+    font-size: 1em;
+  }
+}
