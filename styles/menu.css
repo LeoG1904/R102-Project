@@ -5,6 +5,8 @@
     z-index: 0!important;
 }
 body{
+    height: 100%;
+    overflow: hidden;
     background: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,7 +40,7 @@ header>div>a{
     padding-right: 10px;
 }
 /* bouton */
-.toggle{
+.BoutonMenu{
     position: sticky;
     width: 70px;
     height: 70px;
@@ -49,7 +51,7 @@ header>div>a{
     overflow: hidden;
     z-index: 2!important;
 }
-.toggle span{
+.BoutonMenu span{
     position: absolute;
     width: 40px;
     height: 4px;
@@ -57,31 +59,31 @@ header>div>a{
     border-radius: 4px;
     transition: 0.5s;
 }
-.toggle.Bactive span{
+.BoutonMenu.Bactive span{
     background: #fff;
 }
-.toggle span:nth-child(1){
+.BoutonMenu span:nth-child(1){
     transform: translateY(-15px);
     width: 25px;
     left: 15px;
 }
-.toggle.active span:nth-child(1){
+.BoutonMenu.active span:nth-child(1){
     width: 40px;
     transform: translateY(0px) rotate(405deg);
     transition-delay: 0.125s;
 }
 
-.toggle span:nth-child(2){
+.BoutonMenu span:nth-child(2){
     transform: translateY(15px);
     width: 15px;
     left: 15px;
 }
-.toggle.active span:nth-child(2){
+.BoutonMenu.active span:nth-child(2){
     width: 40px;
     transform: translateY(0px) rotate(-405deg);
     transition-delay: 0.125s;
 }
-.toggle.active span:nth-child(3){
+.BoutonMenu.active span:nth-child(3){
     transform: translateX(100px);
 }
 
@@ -95,7 +97,7 @@ header>div>a{
     padding-top: 90px;
     width: 300px;
     height: 100%;
-    background: rgba(255, 255, 255,0.9);
+    background: rgba(206, 206, 206, 0.9);
     transition: 0.5s;
     z-index: 1!important;
     display: flex;
@@ -117,22 +119,22 @@ header>div>a{
 .menu.Bactive *{
     color: #fff;
 }
-.menu nav:nth-child(1){
+.menu a:nth-child(1){
     transition:0.5s
 }
-.menu nav:nth-child(2){
+.menu a:nth-child(2){
     transition:0.7s
 }
-.menu nav:nth-child(3){
+.menu a:nth-child(3){
     transition:0.9s
 }
-.menu nav:nth-child(4){
+.menu a:nth-child(4){
     transition:1.1s
 }
-.menu nav:nth-child(5){
+.menu a:nth-child(5){
     transition:1.3s
 }
-.menu nav:nth-child(6){
+.menu a:nth-child(6){
     transition:1.5s
 }
 
@@ -240,9 +242,9 @@ header>div>a{
 /* ancrage */ 
 
 .ancrage{
-    position: absolute;
+    position: sticky;
     bottom: 2%;
-    right: 2%;
+    left: 95%;
     width: 70px;
     height: 70px;
     display: flex;
@@ -251,26 +253,41 @@ header>div>a{
     cursor: pointer;
     z-index: 2!important;
 }
-.ancrage span{
+.ancrage a{
     position: absolute;
     width: 40px;
     height: 40px;
     background: #000000;
     transition: 0.5s;
 }
-.ancrage span:nth-child(1){
+.ancrage a:nth-child(1){
     height: 60px;
     width: 10px;
 }
-.ancrage span:nth-child(2){
+.ancrage a:nth-child(2){
     width: 10px;
     transform: translateY(-20px) translateX(-10px) rotate(45deg);
 }
-.ancrage span:nth-child(3){
+.ancrage a:nth-child(3){
     width: 10px;
     transform: translateY(-20px) translateX(10px) rotate(-45deg);
 }
-.ancrage.Bactive span{
+.ancrage.Bactive a{
     background: #fff;
 }
 
+/* scroll */
+
+.containerElements {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.Loop {
+    position: relative;
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
