@@ -38,9 +38,27 @@ ul > li{
     padding: 1em;
 }
 
+/* Images qui disparraissent pour apparaitre en responsive */
+.img_responsive{
+    display: none;
+}
 
-@media all and (max-width: 450px) {
-    body{
-        color: blue!important;
+/* Pour la responsive du site */
+@media all and (max-width: 450px) {  
+    *:not(h1){
+        font-size: 14px;
+    }
+    .containerElements > content{
+        display: block;
+        top: 43%;
+    }
+    .containerElements > content  p, ul{
+        padding: 0.3em;
+    }
+    .img_pas_responsive{
+        display: none;
+    }
+    .img_responsive{
+        display: initial;
     }
 }

@@ -87,6 +87,8 @@ header>div>a{
     transform: translateX(100px);
 }
 
+
+
 /* menu ouvrant */
 
 .menu{
@@ -290,4 +292,6 @@ header>div>a{
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
