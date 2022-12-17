@@ -1,0 +1,424 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    box-shadow: rgb(22, 22, 22) 0px 1px 10px; 
+    background-color: rgba(255, 255, 255, 1);
+    text-align: right;
+    font-size: 1.5em;
+    z-index: 2!important;
+    display: flex;
+    transition: 0.5s;
+    justify-content: space-between;
+}
+header>#text{
+    padding-top: 0.8em;
+}
+header.Bactive{
+    background: #000000;
+}
+header.Bactive *{
+    color: #fff;
+}
+a{
+    color: #000000;
+    text-decoration: None;
+}
+header>div>a{
+    letter-spacing: 2px;
+    padding-right: 10px;
+}
+/* bouton */
+.toggle{
+    position: sticky;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2!important;
+}
+.toggle span{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #000000;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.toggle.Bactive span{
+    background: #fff;
+}
+.toggle span:nth-child(1){
+    transform: translateY(-15px);
+    width: 25px;
+    left: 15px;
+}
+.toggle.active span:nth-child(1){
+    width: 40px;
+    transform: translateY(0px) rotate(405deg);
+    transition-delay: 0.125s;
+}
+
+.toggle span:nth-child(2){
+    transform: translateY(15px);
+    width: 15px;
+    left: 15px;
+}
+.toggle.active span:nth-child(2){
+    width: 40px;
+    transform: translateY(0px) rotate(-405deg);
+    transition-delay: 0.125s;
+}
+.toggle.active span:nth-child(3){
+    transform: translateX(100px);
+}
+/* menu ouvrant */
+
+.menu{
+    position: fixed;
+    transform: translateX(-300px);
+    text-align: left;
+    font-size: 20px;
+    padding-top: 30px;
+    width: 300px;
+    height: 100%;
+    background: rgba(255, 255, 255,0.9);
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif !important;
+    z-index: 1!important;
+}
+.menu.active{
+    transform: translateX(0px);
+    transition-delay: 0,125s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menu.active *{
+
+    transform: translateX(50px);
+    transition-delay: 0,125s;
+}
+.menu.Bactive{
+    background: rgba(0, 0, 0, 0.9);
+}
+.menu.Bactive *{
+    color: #fff;
+}
+.menu nav:nth-child(1){
+    transition:0.5s
+}
+.menu nav:nth-child(2){
+    transition:0.7s
+}
+.menu nav:nth-child(3){
+    transition:0.9s
+}
+.menu nav:nth-child(4){
+    transition:1.1s
+}
+.menu nav:nth-child(5){
+    transition:1.3s
+}
+.menu nav:nth-child(6){
+    transition:1.5s
+}
+
+
+
+.title {
+  background-color: #000000;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  color: white;
+  position: absolute;
+  font-size: 4em;
+  top: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  animation: robotino 2s ease-in-out alternate both;
+  letter-spacing: 5px;
+}
+
+@keyframes robotino {
+  from {
+    letter-spacing: 100vw;
+  }
+  to {
+    letter-spacing: 15px;
+  }
+}
+
+.fa-angle-double-down {
+  position: absolute;
+  color: white;
+  top: 80%;
+  font-size: 1.3em;
+  animation: fleche 2s ease-in-out infinite alternate;
+}
+
+.fa-angle-double-down:hover {
+  cursor: pointer;
+}
+
+/* Containers */
+
+.containerElements {
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.titreContain {
+  font-size: 2em;
+  padding-top: 25px;
+  text-align: center;
+  padding-top: 80px;
+}
+.desc{
+    padding-top: 10px;
+  width: 50%;
+  justify-content: center;
+  transform: translateX(50%);
+  display: flex;
+
+}
+
+/*******/
+
+.présentation {
+  background-color: #1a5276;
+  color: white;
+  position: relative;
+}
+.twoSeparation {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.listEvents1 {
+  padding:10px;
+  width: 50%;
+  justify-content: center;
+  transform: translateX(50%);
+}
+.listEvents1 li {
+  list-style: upper-roman;
+}
+.images{
+  display: flex;
+}
+.img1{
+  padding-left: 130px;
+  width: 10%;
+  justify-content: center;
+  transform: translateX(90%);
+}
+
+.img2{
+  width: 20%;
+  justify-content: center;
+  transform: translateX(90%);
+}
+
+.img3{
+  padding-left: 100px;
+  width: 10%;
+  justify-content: center;
+  transform: translateX(90%);
+
+}
+
+/*******/
+
+.parcoursScolaire {
+  background-color: #e74c3c;
+  color: white;
+}
+
+
+.containerImagesParcours{
+  padding-left: 290px;
+  width: 5%;
+  justify-content: center;
+  transform: translateX(95%);
+  display: flex;
+}
+
+
+/*******/
+
+.parcoursProfessionnel {
+  background-color: rgba(223, 219, 219, 0.555);
+}
+.image{
+  position: absolute; 
+  top: 65%; 
+  left: 50%; 
+  transform: translate(-45%, -50%);
+}
+
+/*******/
+
+.ski {
+  background-color: #3498db;
+  color: white;
+}
+.containerImageSki{
+  position: absolute; 
+  top: 65%; 
+  left: 50%; 
+  transform: translate(-45%, -50%);
+}
+
+/*******/
+
+
+.projetAvenir {
+  background-color: #5d6d7e;
+  color: white;
+}
+.imageCyber{
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+
+/*******/
+.passion {
+  background-color: #eb984e;
+}
+.desc1 {
+  padding-top: 10px;
+  width: 50%;
+  transform: translateX(50%);
+  justify-content: space-evenly;
+}
+.imagemoto{
+  padding-top: 5%;
+  width: 100%; 
+  height: 50%; 
+  overflow: hidden;
+}
+
+/*******/
+
+.voyages {
+  background-color: SeaGreen;
+  color: white;
+}
+.imagesdesert{
+  padding-top: 5%;
+  width: 100%; 
+  height: 50%; 
+  overflow: hidden;
+}
+/*******/
+
+.programmation {
+  background-color: #1b2631;
+  color: white;
+}
+
+.not-visible-titreModelisation {
+  opacity: 0;
+  transform: translateX(200px);
+}
+
+.not-visible-imageModelisation {
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.not-visible-planing {
+  opacity: 0;
+  transform: translateY(-150px);
+}
+
+
+.remonter {
+  position: fixed;
+  z-index: 999;
+  top: 90%;
+  margin: 25px;
+ cursor: pointer;
+}
+
+.fa-arrow-up {
+   color: black;
+   padding-right: 15px;
+  font-size: 2em;
+
+}
+
+
+
+
+.inlineLogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 150px;
+}
+.fab {
+  font-size: 6em;
+  color: blue;
+  cursor: pointer;
+}
+.descriptionProgrammationCont{
+  padding-top: 100px;
+}
+.pProgrammation {
+  font-size: 1.3em;
+  padding-top: 150px;
+  padding:15px;
+  text-align: center;
+}
+.fa-html5 {
+color: #f16529
+}
+
+.fa-css3-alt{
+color:#264de4;
+}
+
+.fa-js {
+  color: #F0DB4F;
+}
+
+.linkInfoLogos {
+  text-align: center;
+  font-size: 0.8em;
+}
+
