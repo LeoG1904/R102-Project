@@ -10,35 +10,37 @@
     transition: 0.5s;
     overflow: auto;
 }
+/* Mode sombre */
 .contenue.Bactive {
     color: rgb(240, 240, 240);
     background: rgba(0, 0, 0, 0.8);
 }
-.contenue > content{
-    left: 50%;
-    transform: translateX(50%);
-    margin-top: 4em;
-}
-.contenue > content > content  p, ul{
-    text-align: justify;
-    padding: 1em;
-}
+
+/* Elements des listes */
 ul > li{
     text-align: left !important;
 }
-.contenue > content > content{
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    transform: translateX(50%);
-    padding: 3em;
+
+/* Elements dans les différentes parties */
+.containerElements > content{
+    display: flex;  
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
-.contenue > content > content img{
-    width: 13em;
-    height: 13em;
+.containerElements > content img{
+    width: 50%;
+    height: 50%;
+}
+.containerElements > content  p, ul{
+    text-align: justify;
+    padding: 1em;
 }
 
 
 @media all and (max-width: 450px) {
-    
+    body{
+        color: blue!important;
+    }
 }
