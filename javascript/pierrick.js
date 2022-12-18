@@ -1,5 +1,3 @@
-const arrowDown = document.querySelector(".fa-angle-double-down");
-const header = document.querySelector("header");
 const paragrapheHeader = document.querySelectorAll(".menu ul li a");
 const title = document.querySelector(".titleRobotino");
 
@@ -13,10 +11,6 @@ var doc = window.document,
   scrollHeight = 0,
   scrollPos = 0,
   i = 0;
-
-arrowDown.addEventListener("click", () => {
-  setScrollPos(context.clientHeight);
-});
 
 function getScrollPos() {
   return (context.pageYOffset || context.scrollTop) - (context.clientTop || 0);
