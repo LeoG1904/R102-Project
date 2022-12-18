@@ -3,8 +3,6 @@ const title = document.querySelector(".titleRobotino");
 
 // SCROLL PAR BLOCS
 
-
-
 var doc = window.document,
   context = doc.querySelector(".js-loop"),
   disableScroll = false,
