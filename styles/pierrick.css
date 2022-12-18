@@ -219,11 +219,6 @@ body {
   justify-content: space-evenly;
   padding-top: 150px;
 }
-.fab {
-  font-size: 6em;
-  color: blue;
-  cursor: pointer;
-}
 .descriptionProgrammationCont{
   padding-top: 100px;
 }
@@ -233,20 +228,8 @@ body {
   padding:15px;
   text-align: center;
 }
-.fa-html5 {
-color: #f16529
-}
 
-.fa-css3-alt{
-color:#264de4;
-}
 
-.fa-js {
-  color: #F0DB4F;
-}
 
-.linkInfoLogos {
-  text-align: center;
-  font-size: 0.8em;
-}
+
 
