@@ -12,7 +12,38 @@
     overflow: auto;
 }
 .contenue.Bactive {
-    color: rgb(217, 217, 217);
+    color: rgb(240, 240, 240);
     background: rgba(0, 0, 0, 0.8);
 }
+.contenue *{
+    padding-bottom: 5px;
+}
+.contenue p{
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 5%;
+}
+
+#escalade{
+    width: 10em;
+    height: 10em;
+}
+#Prologin2023{
+    width: 9em;
+    height: 15em;
+}
+#IA{
+    width: 16.66em;
+    height: 10em;
+}
+.flex{
+    display: flex;
+}
+.flex a{
+    color:rgb(203, 128, 48);
+}
+.center{
+    transform: translateX(30%)
+}
+
     
