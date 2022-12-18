@@ -9,10 +9,13 @@
     left: 50%;
     transform: translate(-50%);
 }
+
+/* Paramètres pour le darkmode */
 .contenue.Bactive {
     color: rgb(240, 240, 240);
     background: rgba(0, 0, 0, 0.8);
 }
+
 .contenue *{
     text-align: right;
 }

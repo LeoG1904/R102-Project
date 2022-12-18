@@ -11,6 +11,7 @@
   </head>
   <body>
     <header>
+      <!--Bouton pour activer le darkmode du site-->
       <div class="BlackMode">
         <span></span>
         <span></span>
@@ -20,16 +21,14 @@
         <span></span>
         <span></span>
       </div>
+
+      <!--Texte dans le barre de menu fixe-->
       <div id="text">
         <a href="../index.html">Accueil</a>
       </div>
     </header>
-    <div class="menu">
-        <a href="#Presentation">Présentation</a>
-        <a href="#Parcours">Parcours</a>
-        <a href="#Pro">Expériences Professionnels</a>
-        <a href="#Passions">Passions</a>
-    </div>
+
+    <!--Tout le contenue de la page-->
     <div class="contenue">
       <?php
       /*---------------------------------------------------------------*/
@@ -189,6 +188,8 @@
     }
     ?>
     </content>
+
+    <!--Inclusion du java dans la page-->
     <script src="../javascript/menu.js"></script>
   </body>
 </html>
