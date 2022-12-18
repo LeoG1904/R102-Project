@@ -1,4 +1,4 @@
-/* contenue */ 
+/* page css pour leo.html */ 
 
 .contenue{
     position: absolute;
@@ -24,6 +24,18 @@
     padding-right: 5%;
 }
 
+/* permet de mettre en forme les différents textes et images*/
+.flex{
+    display: flex;
+}
+.flex a{
+    color:rgb(203, 128, 48);
+}
+.center{
+    transform: translateX(30%)
+}
+
+/* gestion de la taille des images */
 #airsoft{
     width: 20em;
     height: 30em;
@@ -39,15 +51,6 @@
 #IA{
     width: 16.66em;
     height: 10em;
-}
-.flex{
-    display: flex;
-}
-.flex a{
-    color:rgb(203, 128, 48);
-}
-.center{
-    transform: translateX(30%)
 }
 
     

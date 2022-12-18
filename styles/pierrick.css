@@ -1,3 +1,5 @@
+/* dossier css pour la page pierrick.html */
+
 html,
 body {
   height: 100%;
@@ -6,16 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.Loop {
-  position: relative;
-  height: 100%;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
+/* permet de faire le titre */
 .title {
   background-color: #000000;
   height: 100vh;
@@ -38,6 +31,7 @@ body {
   letter-spacing: 5px;
 }
 
+/* anime le titre */
 @keyframes robotino {
   from {
     letter-spacing: 100vw;
@@ -47,22 +41,37 @@ body {
   }
 }
 
-/* Containers */
 
+/* permet de faire le scrol par bloc */
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* définie les dimmensions de chaque bloc */
 .containerElements {
   position: relative;
   height: 100vh;
   scroll-snap-align: start;
 }
 
+/* définie les dimmensions de chaque titre de bloc */
 .titreContain {
   font-size: 2em;
   padding-top: 25px;
   text-align: center;
   padding-top: 80px;
 }
+
+/* définie chaque text */
 .desc{
-    padding-top: 10px;
+  padding-top: 10px;
   width: 50%;
   justify-content: center;
   transform: translateX(50%);
@@ -70,7 +79,7 @@ body {
 
 }
 
-/*******/
+/* bloc 1 */
 
 .presentation {
   background-color: #1a5276;
@@ -95,12 +104,6 @@ body {
 .images{
   display: flex;
 }
-.img1{
-  padding-left: 130px;
-  width: 10%;
-  justify-content: center;
-  transform: translateX(90%);
-}
 
 .img2{
   width: 20%;
@@ -108,15 +111,7 @@ body {
   transform: translateX(90%);
 }
 
-.img3{
-  padding-left: 100px;
-  width: 10%;
-  justify-content: center;
-  transform: translateX(90%);
-
-}
-
-/*******/
+/* bloc 2 */
 
 .parcoursScolaire {
   background-color: #e74c3c;
@@ -133,7 +128,7 @@ body {
 }
 
 
-/*******/
+/* bloc 3 */
 
 .parcoursProfessionnel {
   background-color: rgba(223, 219, 219, 0.555);
@@ -145,7 +140,7 @@ body {
   transform: translate(-45%, -50%);
 }
 
-/*******/
+/* bloc 4 */
 
 .ski {
   background-color: #3498db;
@@ -158,7 +153,7 @@ body {
   transform: translate(-45%, -50%);
 }
 
-/*******/
+/* bloc 5 */
 
 
 .projetAvenir {
@@ -173,7 +168,7 @@ body {
 }
 
 
-/*******/
+/* bloc 6 */
 .passion {
   background-color: #eb984e;
 }
@@ -194,7 +189,7 @@ body {
   padding-left: 10%;
 }
 
-/*******/
+/* bloc 7 */
 
 .voyages {
   background-color: SeaGreen;
@@ -206,13 +201,12 @@ body {
   height: 50%; 
   overflow: hidden;
 }
-/*******/
+/* bloc 8*/
 
 .programmation {
   background-color: #1b2631;
   color: white;
 }
-
 .inlineLogo {
   display: flex;
   flex-wrap: wrap;
