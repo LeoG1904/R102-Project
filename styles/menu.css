@@ -269,11 +269,11 @@ header>div>a{
 }
 .ancrage a:nth-child(2){
     width: 10px;
-    transform: translateY(-20px) translateX(-10px) rotate(45deg);
+    transform: translateY(-20px) translateX(-11px) rotate(45deg);
 }
 .ancrage a:nth-child(3){
     width: 10px;
-    transform: translateY(-20px) translateX(10px) rotate(-45deg);
+    transform: translateY(-20px) translateX(11px) rotate(-45deg);
 }
 .ancrage.Bactive a{
     background: #fff;
