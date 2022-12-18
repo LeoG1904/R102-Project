@@ -185,9 +185,13 @@ body {
 }
 .imagemoto{
   padding-top: 5%;
+  padding-left: 35%;
   width: 100%; 
   height: 50%; 
   overflow: hidden;
+}
+.imagesdesert{
+  padding-left: 10%;
 }
 
 /*******/
@@ -207,36 +211,6 @@ body {
 .programmation {
   background-color: #1b2631;
   color: white;
-}
-
-.not-visible-titreModelisation {
-  opacity: 0;
-  transform: translateX(200px);
-}
-
-.not-visible-imageModelisation {
-  opacity: 0;
-  transform: translateX(-200px);
-}
-
-.not-visible-planing {
-  opacity: 0;
-  transform: translateY(-150px);
-}
-
-.remonter {
-  position: fixed;
-  z-index: 999;
-  top: 90%;
-  margin: 25px;
- cursor: pointer;
-}
-
-.fa-arrow-up {
-   color: black;
-   padding-right: 15px;
-  font-size: 2em;
-
 }
 
 .inlineLogo {
