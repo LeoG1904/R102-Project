@@ -109,12 +109,12 @@ header>div>a{
 }
 .menu.active{
     transform: translateX(0px);
-    transition-delay: 0,125s;
+    transition-delay: 0.125s;
 }
 .menu.active *{
 
     transform: translateX(50px);
-    transition-delay: 0,125s;
+    transition-delay: 0.125s;
 }
 .menu.Bactive{
     background: rgba(0, 0, 0, 0.9);

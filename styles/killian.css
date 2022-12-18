@@ -22,18 +22,18 @@ ul > li{
 }
 
 /* Elements dans les différentes parties */
-.containerElements > content{
+.containerElements > div{
     display: flex;  
     position: absolute; 
     top: 40%; 
     left: 50%; 
     transform: translate(-50%, -50%);
 }
-.containerElements > content img{
+.containerElements > div img{
     width: 50%;
     height: 50%;
 }
-.containerElements > content  p, ul{
+.containerElements > div  p, ul{
     text-align: justify;
     padding: 1em;
 }
@@ -48,11 +48,11 @@ ul > li{
     *:not(h1){
         font-size: 14px;
     }
-    .containerElements > content{
+    .containerElements > div{
         display: block;
         top: 43%;
     }
-    .containerElements > content  p, ul{
+    .containerElements > div  p, ul{
         padding: 0.3em;
     }
     .img_pas_responsive{

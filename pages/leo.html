@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title>Léo Giner</title>
         <link rel="stylesheet" href="../styles/menu.css">
-        <link rel="stylesheet" href="../styles/Mainleo.css">
-        <link rel="icon" href="../img/favicon.png" />
+        <link rel="stylesheet" href="../styles/leo.css">
+        <link rel="icon" href="../img/favicon.png">
     </head>
     <body>
         <header>
             <!--bouton ouverture menu déroulant-->
-            <div class="BoutonMenu" type="button">
+            <div class="BoutonMenu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <!--bouton jour/nuit-->
-            <div class="BlackMode" type="button">
+            <div class="BlackMode">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -38,7 +38,7 @@
             <a href="#Passions">Passions</a>
             <a href="#Avenir">Projets avenir</a>
         </div>
-        <content class="contenue">
+        <div class="contenue">
             <main class="Loop js-loop">
                 <!--Partie présentation-->
                 <section class="containerElements">
@@ -68,15 +68,17 @@
                     <h2 id="Passions">Mes passions</h2>
 
                     <h3>l'escalade</h3>
-                    <content class="flex">
+                    <div class="flex">
                         <p>Je pratique ce sport depuis mes 8 ans. Malgrès de longue pose dû au covid ou autre évènement j'en fait toujours actuellement de façon régulière. J'en fait tous les 2 jours en moyenne.</p>
-                        <img id="escalade" src="../img/léo/escalade.jpg" >
-                    </content>
-                    
-                    
+                        <img id="escalade" src="../img/léo/maisonscalade.jpg" alt="Image de la salle de léo">
+                    </div>
+
                     <h3>Les animaux</h3>
-                    <p class="center">Vivant dans la campagne, j'ai toujours eu au moins un chat et un chien mais aujourd'hui j'ai un bassin, 2 aquariums, des poules, un chien et 2 chats.</p>
-            
+                    <div class="flex">
+                        <p>Vivant dans la campagne, j'ai toujours eu au moins un chat et un chien mais aujourd'hui j'ai un bassin, 2 aquariums, des poules, un chien et 2 chats.</p>    
+                        <img id="axolotl" src="../img/léo/axolotl.jpg" alt="Image d'un des axolotls de léo">
+                    </div>
+                    
                 </section>
                 <!--Partie Projets-->
                 <section class="containerElements">
@@ -84,25 +86,25 @@
             
                     <h3>Etudes</h3>
                     
-                    <content class="flex">
+                    <div class="flex">
                         <p>Dans le cadre où je fini les 3 années de l'IUT Info, j'ai pour projet d'aller en master spécialisé dans l'IA voir un double master pour spécialisé un autre domaine.</p>
-                        <img id="IA"  src="../img/léo/IA.webp">
-                    </content>
+                        <img id="IA"  src="../img/léo/IA.webp" alt="Image IA">
+                    </div>
 
                     <h3>Concours</h3>
-                    <content class="flex">
+                    <div class="flex">
                         <p>Comme l'année dernière j'ai décidé de me réincrire au concour <a href="https://prologin.org/">Prologin 2022/2023</a> afin d'avoir le top 10 cette fois-ci.</p>
-                        <img id="Prologin2023"  src="../img/léo/prologin2023.jpg">
-                    </content>
+                        <img id="Prologin2023"  src="../img/léo/prologin2023.jpg" alt="Image prologin 2022/2023">
+                    </div>
                 </section>
                 <!--Bouton d'ancrage-->
-                <div class="ancrage" type="button">
+                <div class="ancrage">
                     <a href="#Presentation"></a>
                     <a href="#Presentation"></a>
                     <a href="#Presentation"></a>
                 </div>
             </main>
-        </content>
+        </div>
         <script src="../javascript/menu.js"></script>
     </body>
 </html>
